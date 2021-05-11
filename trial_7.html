@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            h1 {
+                font-family: sans-serif;
+            }
+            div.back_rectangle {
+                width: 600px;
+                height: 130px;
+                background-color: #555555;
+                margin-top: 10px;
+           }
+           div.fore_rectangle {
+                display: inline-block;
+                background-color: #cccccc;
+                margin: 6px;
+                margin-right: -4px;
+                height: 118px;
+            }
+            #top .fore_rectangle{
+                width: 32%;
+            }
+            #mid .fore_rectangle{
+                width: 23.75%;
+                vertical-align: top;
+            }
+            #mid .fore_rectangle:nth-child(2n) {
+                height: 75px;
+            }
+            #mid .fore_rectangle:nth-child(2n+1) {
+                height: 100px;
+            }
+            #bottom .fore_rectangle{
+                width: 48.5%;
+                vertical-align: bottom;
+            }
+            #bottom .fore_rectangle:nth-child(1) {
+                height: 35px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>AAAAAHHHHHH</h1>
+        <div class="back_rectangle" id="top">
+            <div class="fore_rectangle"></div>
+            <div class="fore_rectangle"></div>
+            <div class="fore_rectangle"></div>
+        </div>
+        <div class="back_rectangle" id="mid">
+            <div class="fore_rectangle"></div>
+            <div class="fore_rectangle"></div>
+            <div class="fore_rectangle"></div>
+            <div class="fore_rectangle"></div>
+        </div>
+        <div class="back_rectangle" id="bottom">
+            <div class="fore_rectangle"></div>
+            <div class="fore_rectangle"></div>
+        </div>
+    </body>
+</html>
